@@ -14,27 +14,27 @@ const CardItem = ({ link, heading, description }) => (
 const cardData = [
   {
     link: "https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720",
-    heading: "Hello Sir",
-    description: "Thank you sir.",
+    heading: "Golf Course Road",
+    description: "1100+ options",
   },
   {
     link: "https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720",
-    heading: "Hello Sir",
-    description: "Thank you sir.",
+    heading: "Golf Course Road",
+    description: "1100+ options",
   },
   {
     link: "https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720",
-    heading: "Hello Sir",
-    description: "Thank you sir.",
+    heading: "Golf Course Road",
+    description: "1100+ options",
   },
   {
     link: "https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720",
-    heading: "Hello Sir",
-    description: "Thank you sir.",
+    heading: "Golf Course Road",
+    description: "1100+ options",
   },  {
     link: "https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720",
-    heading: "Hello Sir",
-    description: "Thank you sir.",
+    heading: "Golf Course Road",
+    description: "1100+ options",
   },
 ];
 
