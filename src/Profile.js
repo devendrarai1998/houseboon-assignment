@@ -26,10 +26,7 @@ export default function Profile() {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >
-        <div className='person'>
         <PersonIcon />
-        </div>
-
       </Button>
       <Menu
         id="basic-menu"

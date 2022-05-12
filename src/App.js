@@ -9,11 +9,13 @@ function App(){
   return(
     <div className="app">
       <Header />
-      <div className="text-h1">
-        <h1> We care about your renting worries.</h1>
-        <h3> Building the largest brokerage free community.</h3>
-        <SearchAppBar />
-      </div>
+      {/* <div className="Search"> */}
+          <div className="text-h1">
+            <h1> We care about your renting worries.</h1>
+            <h4> Building the largest brokerage free community.</h4>
+          </div>
+          <SearchAppBar  className="Search" />
+     {/*  </div> */}
       
       <Card />
       <Feature />

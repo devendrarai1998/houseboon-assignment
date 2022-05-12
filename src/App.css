@@ -1,7 +1,12 @@
 
 .text-h1 {
     display: flex;
-    align-items: center;
+    align-items: center; 
     flex-direction: column;
+    padding: 50px;
+}
+
+.Search {
+    align-items: center;
     justify-content: center;
 }

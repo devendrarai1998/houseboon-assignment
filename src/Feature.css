@@ -1,0 +1,12 @@
+.cardMedia {
+    height: 60%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width:100%;
+}

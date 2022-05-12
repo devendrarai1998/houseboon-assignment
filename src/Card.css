@@ -1,17 +1,25 @@
 .card {
-    margin: auto;
-    overflow: hidden;
-    box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
-    transition: transform 100ms ease-in;
-    cursor: pointer;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.cardItem{
+
+  box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+  
+  .card-child > img {
+    width: 200px;
   }
   
-  
-  .card > img {
-    object-fit: fill;
-    max-width: 1vh;
-    max-height: 1vh;
-    width: 25%;
+  .card-child:hover {
+    opacity: 0.7;
+    transition: opacity 300ms ease-in;
   }
   
   .card__info > h3 {
@@ -28,12 +36,17 @@
 
   .card-mapping {
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
   }
   
   .card-child {
+    opacity: 1;
     list-style: none;
     max-width: 200px;
     padding: 10px 0;
+  }
+
+  .card-child > div {
+    margin-left: 10px;
   }

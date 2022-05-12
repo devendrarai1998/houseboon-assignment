@@ -1,37 +1,36 @@
 import React from 'react'
 import './Header.css'
-//import Paper from "@mui/material/Paper";
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Profile from "./Profile";
 
 function Header() {
     return (
-        <div className='header'>              
+        <div className='header'>    
+            <div style={{display:"flex", alignItems: "center", columnGap: "5px"}}>         
                 <img
                     className="header__icon"
                     src="https://pngimg.com/uploads/house/small/house_PNG73.png"
                     alt="Houseboon"
                 />
-
+                <h3>
+                    HouseBoon
+                </h3>
+            </div> 
             <div className='header__right'>
-            <Box
-               component="form"
-               sx={{ '& > :not(style)': { m: 1, width: '25ch' }, }}
-               noValidate 
-               autoComplete="off" 
-            >
-{/*             <TextField id="outlined-basic" label="Check Tenenacy Space" variant="outlined" /> */}
-            <TextField id="filled-basic" label="List Your Place" variant="filled" />
-            </Box>
-            </div>
-            <div style={{display: "flex", alignItems:"center", justifyContent: "center"}}>
+
+                <h5 style={{
+                    cursor: "pointer",
+                    color: "#C2C2C2"
+                }}>Check Tenancy Socre</h5>
+
+                <TextField id="filled-basic" sx={{
+                    marginRight: "10px"
+                }} label="List Your Place" variant="outlined" />
+                
                 <NotificationsActiveIcon />
                 <Profile />
             </div>
-            
-
         </div>
     )
 }

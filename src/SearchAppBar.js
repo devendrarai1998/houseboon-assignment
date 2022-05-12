@@ -1,14 +1,11 @@
 import React from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 
-const Search = styled('div')(({ theme }) => ({
+ const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
   backgroundColor: alpha(theme.palette.common.white, 0.15),
@@ -21,8 +18,8 @@ const Search = styled('div')(({ theme }) => ({
     marginLeft: theme.spacing(1),
     width: 'auto',
   },
-}));
-
+})); 
+ 
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'inherit',
@@ -43,33 +40,34 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function SearchAppBar() {
   return (
+<div style={{display:"flex",height:"150px",flexDirection:"column",justifyContent:"space-between",alignItems:"center"}}>
+      <AppBar position="static" style={{width:"60%",background:"red",borderRadius:"15px",display:"flex",flexDirection:"row",padding:"8px 20px",alignItems:"center",justifyContent:"space-between"}}> 
+          
+          <div style={{display:"flex",}}>
+            
 
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            /* size="large" */
-           /*  edge="start" */
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-          </IconButton>
-
-
-          <Typography variant="h6" noWrap component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}>
-            Search
-          </Typography> 
-
-
-          <Search>
+         <Search style={{ display:"flex",flexDirection:"row",justifyContent:"start",alignItems:"center",padding:"2px 5px",background:"transparent"}}>
             <SearchIcon />
             <StyledInputBase placeholder="Search…" inputProps={{ 'aria-label': '' }}/>
           </Search>
-        </Toolbar>
+            </div>
+        
+
+
+          <Typography component="div"
+            sx={{ display: { xs: 'none', sm: 'block' } ,background:"blue",padding:"15px",width:"100px",borderRadius:"5px"}}
+            >
+            Search
+          </Typography> 
+
+        
+        
       </AppBar>
-    </Box>
+
+      <button style={{padding:"12px",border:"1px solid blue",color:"blue",borderRadius:"12px",background:"white"}}>
+        List Your Places
+      </button>
+      </div> 
   );
 }
 
